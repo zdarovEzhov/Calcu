@@ -17,7 +17,7 @@ public class Main {
         prov1 = RomanOrArab.romanOrArab(first);
         prov2 = RomanOrArab.romanOrArab(second);
 
-        if (prov1 = true) {
+        if ((prov1 = true) && (prov2 = true)) {
             number1 = RomanToNumber.romanToNumber(first);
             number2 = RomanToNumber.romanToNumber(second);
             if (number1 < 0 || number2 < 0) {
