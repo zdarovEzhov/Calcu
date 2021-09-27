@@ -24,11 +24,16 @@ public class Main {
                 System.out.println("throws Exception");
             } else {
                 result = Calculated.calculated(number1, number2, operation);
-                System.out.println("Результат для римских цифр");
-                String resultRoman = ConvertNumToRoman.convertNumToRoman(result);
-                ;
-                System.out.println(first + " " + operation + " " + second + " = " + resultRoman);
+                if (result < 0) {
+                    System.out.println("throws Exception");
 
+                } else {
+                    System.out.println("Результат для римских цифр");
+                    String resultRoman = ConvertNumToRoman.convertNumToRoman(result);
+                    ;
+                    System.out.println(first + " " + operation + " " + second + " = " + resultRoman);
+
+                }
             }
         } else {
 
