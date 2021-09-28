@@ -14,19 +14,19 @@ public class Main {
         int number1, number2, result;
         char operation = operator.charAt(0);
         boolean prov1, prov2;
+
         prov1 = RomanOrArab.romanOrArab(first);
         prov2 = RomanOrArab.romanOrArab(second);
 
-        if ((prov1 = true) && (prov2 = true)) {
+        if ((prov1 == true) && (prov2 == true)) {
             number1 = RomanToNumber.romanToNumber(first);
             number2 = RomanToNumber.romanToNumber(second);
             if (number1 < 0 || number2 < 0) {
-                System.out.println("throws Exception");
+                System.out.println("throws Exception1");
             } else {
                 result = Calculated.calculated(number1, number2, operation);
                 if (result < 0) {
                     System.out.println("throws Exception");
-
                 } else {
                     System.out.println("Результат для римских цифр");
                     String resultRoman = ConvertNumToRoman.convertNumToRoman(result);
@@ -40,12 +40,10 @@ public class Main {
             number1 = Integer.parseInt(first);
             number2 = Integer.parseInt(second);
             result = Calculated.calculated(number1, number2, operation);
-            if (result < 0) {
-                System.out.println("throws Exception1");
-            } else {
-                System.out.println("Результат для арабских цифр");
-                System.out.println(number1 + " " + operation + " " + number2 + " = " + result);
-            }
+
+            System.out.println("Результат для арабских цифр");
+            System.out.println(number1 + " " + operation + " " + number2 + " = " + result);
+
         }
     }
 }
