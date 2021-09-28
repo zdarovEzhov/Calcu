@@ -19,7 +19,8 @@ public class ConvertNumToRoman {
                 "LXV", "LXVI", "LXVII", "LXVIII", "LXIX", "LXX",
                 "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV", "LXXVI",
                 "LXXVII", "LXXVIII", "LXXIX", "LXXX", "LXXXI", "LXXXII",
-                "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX"
+                "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX",
+                "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX"
         };
         final String s = roman[numArabian];
         return s;
