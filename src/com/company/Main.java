@@ -25,7 +25,7 @@ public class Main {
                 System.out.println("throws Exception1");
             } else {
                 result = Calculated.calculated(number1, number2, operation);
-                if (result < 0) {
+                if ((result < 0) || (result > 99)) {
                     System.out.println("throws Exception");
                 } else {
                     System.out.println("Результат для римских цифр");
